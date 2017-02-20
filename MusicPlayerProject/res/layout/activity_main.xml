@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/musicbg"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_weight="0.76"
+        android:drawSelectorOnTop="true" >
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/pauseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/playBtn"
+            android:background="@drawable/pause"
+            android:layout_marginLeft="20dp"
+            android:width="50dp"
+            android:height="50dp"
+             />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"           
+            android:background="@drawable/stop"
+            android:width="50dp"
+            android:height="50dp"
+            />
+
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/stopBtn"
+            android:background="@drawable/play"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:height="50dp"
+            android:width="50dp" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+</LinearLayout>
